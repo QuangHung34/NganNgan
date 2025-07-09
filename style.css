@@ -403,16 +403,26 @@ footer {
     padding: 0;
   }
   
-  .menu-toggle {
-    display: block;
-    width: 100%;
-    text-align: center;
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
   }
+  
+  .menu-toggle i {
+    margin-right: 10px;
+  }
+  
   
   nav ul {
     display: none;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    background: var(--white);
   }
   
   nav ul.show {
@@ -420,9 +430,15 @@ footer {
   }
   
   nav ul li {
-    width: 100%;
-    text-align: center;
     padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  nav ul li i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
   }
   
   main {
